@@ -1,0 +1,185 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fce4ec; /* Soft pink background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Container for the whole page */
+.container {
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width for a smaller card */
+    padding: 20px;
+}
+
+/* Styling for the card (main box) */
+.card {
+    background-color: white;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Reduced padding for a smaller feel */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styling inside the card */
+.card-header {
+    margin-bottom: 15px;
+    background-color: #f8bbd0; /* Soft pink for the header */
+    color: white;
+    padding: 10px; /* Reduced padding */
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.card-header h4 {
+    font-size: 1.5em; /* Slightly smaller font */
+    margin: 0;
+}
+
+/* Input fields styling */
+.input-group {
+    margin-bottom: 15px; /* Reduced margin */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.input-group input {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #f48fb1; /* Pink border on focus */
+    outline: none;
+}
+
+/* Buttons styling */
+.box-footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-footer input {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.btn-success {
+    background-color: #f48fb1; /* Pink button */
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #ec407a;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Result output styling */
+.output {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f06292; /* Soft pink */
+    color: white;
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners */
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* Salam Cinta Aulia styling */
+.salam-cinta {
+    margin-top: 20px;
+    color: #d48c8b; /* Pink nude */
+    font-size: 1.2em;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Adding the love emoticons */
+.salam-cinta::before {
+    content: "❤️❤️ "; /* Add love emoticons before the text */
+}
+
+/* Styling the result table */
+.card-body.result {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners */
+}
+
+.card-body.result table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.card-body.result table td {
+    padding: 8px; /* Reduced padding */
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+}
+
+.card-body.result b {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .card-header h4 {
+        font-size: 1.2em;
+    }
+
+    .input-group input {
+        font-size: 0.9em;
+    }
+
+    .box-footer input {
+        font-size: 0.9em;
+    }
+
+    .card-body.result table td {
+        font-size: 0.9em;
+    }
+}
